@@ -1,0 +1,1 @@
+{"name":"Local: temple","url":"/home/martinien/CPTemplates/OwnTest/temple.cpp","tests":[{"id":1707856480730,"input":"1\n4\n2\n3\n1\n4","output":"2\n3\n1\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/CPTemplates/OwnTest/temple.cpp","group":"local","local":true}
