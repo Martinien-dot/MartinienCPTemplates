@@ -128,19 +128,20 @@ if __name__=="__main__":
 	grid =[[0 for x in range(9)]for y in range(9)]
 	
 	# assigning values to the grid
-	grid =[[0, 0, 0, 0, 0, 0, 0, 0, 0],
+	grid =[[0, 0, 0, 7, 0, 0, 0, 0, 9],
 		[0, 0, 0, 0, 0, 0, 0, 0, 8],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0],
-		[0, 0, 0, 0, 7, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0],
 		[0, 0, 0, 0, 0, 0, 0, 0, 0]]
+	grid1 = [[int(i) for i in input().split()] for j in range(9)]
 	
 	# if success print the grid
-	if(solve_sudoku(grid)):
-		print_grid(grid)
+	if(solve_sudoku(grid1)):
+		print_grid(grid1)
 	else:
 		print ("No solution exists")
 
