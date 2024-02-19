@@ -143,6 +143,12 @@ void printGrid(int grid[N][N])
 int main()
 {
 	// 0 means unassigned cells
+	for(int i=0; i<9; i++){
+		for(int j=0; j<9; j++){
+			cout<<0<<" ";
+		}
+		cout<<endl;
+	}
 	int grid[N][N] = { { 3, 0, 6, 5, 0, 8, 4, 0, 0 },
 					{ 5, 2, 0, 0, 0, 0, 0, 0, 0 },
 					{ 0, 8, 7, 0, 0, 0, 0, 3, 1 },
@@ -159,5 +165,3 @@ int main()
 
 	return 0;
 }
-
-// This is code is contributed by rathbhupendra

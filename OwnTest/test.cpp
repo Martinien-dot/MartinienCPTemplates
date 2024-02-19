@@ -2,24 +2,10 @@
 using namespace std;
 
 void solve(){
-    int a, b;
-    cin>>a>>b;
-    int mx = max(a, b);
-    int mn = min(a, b);
-    if(mx%2==0){
-        if(mn%2==1 && mx==2*mn){
-            cout<<"No"<<endl;
-        }
-        else{
-            cout<<"Yes"<<endl;
-        }
-    }
-    else if(mn%2==0){
-        cout<<"Yes"<<endl;
-    }
-    else{
-        cout<<"No"<<endl;
-    }
+    int a[] = {1, 2, 3, 4};
+    swap(a[0], a[2]);
+    cout<<a[0]<<endl;
+    cout<<a[2]<<endl;
 }
 
 int main(){

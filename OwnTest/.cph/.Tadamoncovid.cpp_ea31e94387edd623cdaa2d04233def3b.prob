@@ -1,0 +1,1 @@
+{"name":"Local: Tadamoncovid","url":"/home/martinien/Documents/GitHub/MartinienCPTemplates/OwnTest/Tadamoncovid.cpp","tests":[{"id":1708117766759,"input":"2\n3\n10 6 4\n5\n2 8 4 20 1","output":"3\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/Documents/GitHub/MartinienCPTemplates/OwnTest/Tadamoncovid.cpp","group":"local","local":true}
