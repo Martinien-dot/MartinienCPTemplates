@@ -22,10 +22,10 @@ void solve() {
         }
 }
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-        solve();
-    }
+    map<char, int> mp;
+    mp['a']++;
+    mp['a']++;
+    cout<<mp['a']<<endl;
+
     return 0;
 }
