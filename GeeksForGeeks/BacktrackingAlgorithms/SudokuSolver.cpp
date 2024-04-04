@@ -43,7 +43,6 @@ bool SolveSudoku(int grid[N][N])
 		// Check if looks promising
 		if (isSafe(grid, row, col, num)) 
 		{
-			
 			// Make tentative assignment
 			grid[row][col] = num;
 

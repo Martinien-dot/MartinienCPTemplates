@@ -9,16 +9,16 @@ def print_grid(arr):
 		print ()
 
 		
-# Function to Find the entry in 
+# Function to Find the entry in
 # the Grid that is still not used
-# Searches the grid to find an 
+# Searches the grid to find an
 # entry that is still unassigned. If
-# found, the reference parameters 
+# found, the reference parameters
 # row, col will be set the location
-# that is unassigned, and true is 
+# that is unassigned, and true is
 # returned. If no unassigned entries
 # remains, false is returned.
-# 'l' is a list variable that has 
+# 'l' is a list variable that has
 # been passed from the solve_sudoku function
 # to keep track of incrementation 
 # of Rows and Columns
