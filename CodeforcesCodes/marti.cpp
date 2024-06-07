@@ -3,7 +3,7 @@
 #define ll long long
 using namespace std;
 //vector<int>totient(1e9);
-void afficheVec1D(vector<int>vect){
+/*void afficheVec1D(vector<int>vect){
     int taille = vect.size();
     for(int i=0; i<taille; i++){
         if(i==taille-1){
@@ -46,7 +46,7 @@ int calc(int arr[],int m, int l, int r){
         res = ((res%m)*(arr[i]%m))%m;
     }
     return res;
-}
+}*/
 vector<ll>st(4*1e5, -1);
 /*void segtreeMul(vector<ll>& arr){
     int z = arr.size();
@@ -70,48 +70,53 @@ vector<ll>st(4*1e5, -1);
     }
     return s;
 }*/
-
-void solve(){
-    int n;
-    cin>>n;
-    string s;
-    cin>>s;
-    int tl[n+1];
-    int tr[n+1];
+set<ll>twoPows;
+const ll mod = 1e9+7;
+int kadanes(ll arr[], ll n){
+    ll temp = 0;
+    ll res = 0;
     for(int i=0; i<n; i++){
-        tl[i] = 0;
-        tr[i] = 0;
+        temp=max(0LL, (temp+arr[i]));
+        res = max(temp, res);
     }
-    for(int i=1; i<n; i++){
-        if(s[i] == '0'){
-            tl[i] = tl[i-1] + 1;
-        }
-        else{
-            tl[i] = tl[i-1];
-        }
-    }
-    for(int i=n-1; i>=0; i--){
-        if(s[i] == '1'){
-            tr[i] = tl[i+1] + 1;
-        }
-        else{
-            tr[i] = tr[i+1];
-        }
-    }
-    int mn = INT_MAX;
-    int res = 0;
-    for(int i=0; i<=n; i++){
-        if((tl[i]>=(i+1)/2) && (tr[i]>=(n-i+1)/2)){
-            int temp = abs(n - 2*i);
-            if(temp<mn){
-                mn = min(mn, temp);
-                res = i;
-            }
-        }
-    }
-    cout<<res<<endl;
+    return res;
 }
-
+void solve(){
+    int n, m;
+    cin>>n>>m;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin>>arr[i];
+    }
+    int res = 0;
+    int deb = (m+1)/2;
+    int fn = (m)/2;
+    int i = 0;
+    int sm = 0;
+    while(i<n && deb-arr[i]>=0){
+        if(deb==0){
+            break;
+        }
+        deb-=arr[i];
+        arr[i] = 0;
+        i++;
+        res++;
+    }
+    if(i<n && deb>0){
+        arr[i]-=deb;
+    }
+    int j = n-1;
+    while(j>=0 && fn>0 && fn-arr[j]>=0){
+        if(fn==0){
+            break;
+        }
+        fn-=arr[j];
+        arr[j] = 0;
+        j--;
+        res++;
+    }
+    cout<<min(res, n)<<endl;
+}
 int main(){
     sttt;
     int t=1;

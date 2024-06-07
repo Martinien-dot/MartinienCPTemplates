@@ -2,31 +2,18 @@
 
 using namespace std;
 
-void generateSubsetSums(const vector<int>& arr, int index, int sum, multiset<int>& subsetSums) {
-    int n = arr.size();
-    if (index == n) {
-        subsetSums.insert(sum);
-        return;
-    }
-    generateSubsetSums(arr, index + 1, sum + arr[index], subsetSums);
-    generateSubsetSums(arr, index + 1, sum, subsetSums);
-}
-
-multiset<int> getAllSubsetSums(const vector<int>& arr) {
-    multiset<int> subsetSums;
-    generateSubsetSums(arr, 0, 0, subsetSums);
-    return subsetSums;
-}
 
 int main() {
-    vector<int> arr = {-1, 2, 3};
-    multiset<int> subsetSums = getAllSubsetSums(arr);
-
-    cout << "Ensemble de toutes les sommes possibles du tableau : ";
-    for (int sum : subsetSums) {
-        cout << sum << " ";
+    multiset<int>ost;
+    ost.insert(5);
+    ost.insert(4);
+    ost.insert(2);
+    auto i = upper_bound(ost.begin(), ost.end(), 5);
+    if(i==ost.end()){
+        cout<<"rien"<<endl;
     }
-    cout << endl;
+    else{
 
-    return 0;
+        cout<<*i<<endl;
+    }
 }

@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/home/martinien/Documents/GitHub/MartinienCPTemplates/CodeforcesCodes/test.py","tests":[{"id":1716817279873,"input":"abcd\ncdef\n3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/Documents/GitHub/MartinienCPTemplates/CodeforcesCodes/test.py","group":"local","local":true}
