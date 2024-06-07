@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"/home/martinien/Documents/codeforces/Round796/C.py","tests":[{"id":1717771532125,"input":"2\n2\na\nab\nb\ncd\nacd\n3\nz\na\na\naa\nyakumo\nran\nyakumoran\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/Documents/codeforces/Round796/C.py","group":"local","local":true}

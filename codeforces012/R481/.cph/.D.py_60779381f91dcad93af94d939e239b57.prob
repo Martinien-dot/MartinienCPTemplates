@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"/home/martinien/Documents/codeforces/R481/D.py","tests":[{"id":1717337790058,"input":"4\n24 21 14 10","output":""},{"id":1717339796972,"input":"5\n1 3 6 9 12","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/Documents/codeforces/R481/D.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"/home/martinien/Documents/codeforces/R2/C.py","tests":[{"id":1717540193435,"input":"aabc","output":"abba"},{"id":1717540223149,"input":"aabcd","output":"abcba"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/Documents/codeforces/R2/C.py","group":"local","local":true}

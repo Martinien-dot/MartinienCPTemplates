@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/home/martinien/Documents/codeforces/test.py","tests":[{"id":1717097267414,"input":"7\n1\n2\n5\n9\n16\n114514\n1000000","output":"3\n3\n1\n1\n17\n2\n64"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/martinien/Documents/codeforces/test.py","group":"local","local":true}
